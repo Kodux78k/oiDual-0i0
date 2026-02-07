@@ -2120,7 +2120,26 @@ const showLoading = msg => {
 
 
 
+<script>const input = document.getElementById('userInput');
+const btn = document.getElementById('btnSend');
 
+function sendMessage(){
+  const text = input.value.trim();
+  if(!text) return;
+
+  console.log('ENVIADO:', text);
+  input.value = '';
+}
+
+btn.addEventListener('click', sendMessage);
+
+input.addEventListener('keydown', e => {
+  if(e.key === 'Enter'){
+    e.preventDefault();
+    sendMessage();
+  }
+});
+</script>
 
 <!-- ============ TEXT BEAUTY & INTERACTION PATCH — V3 (aditivo) ============ -->
 
