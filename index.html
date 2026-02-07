@@ -329,6 +329,7 @@ body{
 }
 .lock-button:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.8)}
 
+/*.input-row{left:50%;transform:translate(-50%,-50%);}*/
 /* zen-mode */
 .fade-out{opacity:0;transform:translateY(5px)}
 .fade-in{opacity:1;transform:translateY(0)}
@@ -2077,7 +2078,7 @@ const showLoading = msg => {
     <div class="input-row">
         <button class="btn-icon" id="btnVoice" title="Voz"><svg><use href="#icon-voice"></use></svg></button>
         <button class="btn-icon" id="btnUploadFile" title="Enviar Arquivo"><svg><use href="#icon-upload"></use></svg></button>
-        <input type="text" id="userInput" class="glass-input" placeholder="Emitir pulso..." autocomplete="off">
+       <!-- <input type="text" id="userInput" class="input-container glass-input" placeholder="Emitir pulso..." autocomplete="off"> -->
         <button class="btn-icon btn-primary" id="btnSend" title="Enviar"><svg><use href="#icon-send"></use></svg></button>
     </div>
   </div>
